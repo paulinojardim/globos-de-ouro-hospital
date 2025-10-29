@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Votação Funcionários</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <h1>Formulário de Votação</h2>
+        </header>
+
+        <div class="align-items-center d-flex flex-column">
+            <form id="formulario" class="w-50 mt-2">
+
+                <div class="mb-4">
+                    <label for="funcionario" class="form-label">Escolha o funcionário:</label>
+                    <select id="funcionario" name="funcionario" class="form-select" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option>Paulino Jardim</option>
+                        <option>Adriana Felgueiras</option>
+                        <option>Alexandra Ferreira</option>
+                        <option>Ana Clementina</option>
+                        <option>Ana Isabel Paula</option>
+                        <option>Ana Oliveira</option>
+                        <option>Andreia Baptista</option>
+                        <option>António Araújo</option>
+                        <option>Bárbara O.</option>
+                        <option>Bruna Atilano</option>
+                        <option>Carla Stephanie</option>
+                        <option>Catarina Ribeiro</option>
+                        <option>Charlene Baptista</option>
+                        <option>Cláudia Fagundes</option>
+                        <option>Cláudia Gonçalves</option>
+                        <option>Diana Patrão</option>
+                        <option>Diogo Santos</option>
+                        <option>Edgar Couto</option>
+                        <option>Higino Lages</option>
+                        <option>Ivone Carvalho</option>
+                        <option>Joana Bogas</option>
+                        <option>Joana Neiva</option>
+                        <option>Juliana Leal</option>
+                        <option>Liane Rodrigues</option>
+                        <option>Luciana Sousa</option>
+                        <option>Luísa Alves</option>
+                        <option>Marta Silva</option>
+                        <option>Natália Matos</option>
+                        <option>Paulino Jardim</option>
+                        <option>Patrícia Quintela</option>
+                        <option>Renata Rego</option>
+                        <option>Sandra Pimenta</option>
+                        <option>Sandrina Agostinho</option>
+                        <option>Sílvia Lopes</option>
+                        <option>Sofia Ferreira</option>
+                        <option>Tânia Queirós</option>
+                        <option>Alexandra Ferreira</option>
+                        <option>--------------------------</option>
+                        <option>TAS Carmo Ferreira</option>
+                        <option>TAS Cláudia Mota</option>
+                        <option>TAS Conceição Pereira</option>
+                        <option>TAS Cristina Eira</option>
+                        <option>TAS Elizabete Silva</option>
+                        <option>TAS Emília Ferreira</option>
+                        <option>TAS Filipe Costa</option>
+                        <option>TAS Idalina Silva</option>
+                        <option>TAS Inês Lopes</option>
+                        <option>TAS Isabel Maciel</option>
+                        <option>TAS Luciana Carreiras</option>
+                        <option>TAS Lurdes Silva</option>
+                        <option>TAS Mariana Barros</option>
+                        <option>TAS Natália Salgueiro</option>
+                        <option>TAS Palmira Coelho</option>
+                        <option>TAS Rosa Costa</option>
+                        <option>TAS Sandra Ferreira</option>
+                        <option>TAS Sandra Matos</option>
+                        <option>TAS Vasco Santos</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Escolha características (pode marcar várias):</label>
+
+                    <div id="caracteristicas-container" class="card d-flex flex-row flex-wrap gap-2 p-2">
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Miss" name="caracteristica"
+                                value="Miss" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Miss">Miss</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Mister" name="caracteristica"
+                                value="Mister" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Mister">Mister</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Azarado" name="caracteristica"
+                                value="Azarado" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Azarado">Azarado</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Folgado" name="caracteristica"
+                                value="Folgado" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Folgado">Folgado</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Escravo" name="caracteristica"
+                                value="Escravo" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Escravo">Escravo</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Bombeiro" name="caracteristica"
+                                value="Bombeiro" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Bombeiro">Bombeiro</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Resmungão" name="caracteristica"
+                                value="Resmungão" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Resmungão">Resmungão</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Simpático" name="caracteristica"
+                                value="Simpático" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Simpático">Simpático</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Tímido" name="caracteristica"
+                                value="Tímido" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Tímido">Tímido</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Extrovertido"
+                                name="caracteristica" value="Extrovertido" autocomplete="off">
+                            <label class="btn btn-outline-primary"
+                                for="caracteristica-Extrovertido">Extrovertido</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Brincalhão"
+                                name="caracteristica" value="Brincalhão" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Brincalhão">Brincalhão</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Político" name="caracteristica"
+                                value="Político" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Político">Político</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Cafeínas" name="caracteristica"
+                                value="Cafeínas" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Cafeínas">Cafeínas</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Distraído" name="caracteristica"
+                                value="Distraído" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Distraído">Distraído</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Adiantado" name="caracteristica"
+                                value="Adiantado" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Adiantado">Adiantado</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Biscateiro"
+                                name="caracteristica" value="Biscateiro" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Biscateiro">Biscateiro</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Educado" name="caracteristica"
+                                value="Educado" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Educado">Educado</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Desenvergonhado"
+                                name="caracteristica" value="Desenvergonhado" autocomplete="off">
+                            <label class="btn btn-outline-primary"
+                                for="caracteristica-Desenvergonhado">Desenvergonhado</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Reformado" name="caracteristica"
+                                value="Reformado" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Reformado">Reformado</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Fitness" name="caracteristica"
+                                value="Fitness" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Fitness">Fitness</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Dorminhoco"
+                                name="caracteristica" value="Dorminhoco" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Dorminhoco">Dorminhoco</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Paciente" name="caracteristica"
+                                value="Paciente" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Paciente">Paciente</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Organizado"
+                                name="caracteristica" value="Organizado" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Organizado">Organizado</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Mal" name="caracteristica"
+                                value="Mal" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Mal">Mal</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Atento" name="caracteristica"
+                                value="Atento" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Atento">Atento</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Zen" name="caracteristica"
+                                value="Zen" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Zen">Zen</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Vaidoso" name="caracteristica"
+                                value="Vaidoso" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Vaidoso">Vaidoso</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Rebelde" name="caracteristica"
+                                value="Rebelde" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Rebelde">Rebelde</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Perfecionista"
+                                name="caracteristica" value="Perfecionista" autocomplete="off">
+                            <label class="btn btn-outline-primary"
+                                for="caracteristica-Perfecionista">Perfecionista</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Criativo" name="caracteristica"
+                                value="Criativo" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Criativo">Criativo</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Cortes" name="caracteristica"
+                                value="Cortes" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Cortes">Cortes</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Cheiroso" name="caracteristica"
+                                value="Cheiroso" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Cheiroso">Cheiroso</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Desesperado"
+                                name="caracteristica" value="Desesperado" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Desesperado">Desesperado</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Potomaniaco"
+                                name="caracteristica" value="Potomaniaco" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Potomaniaco">Potomaniaco</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Precavido" name="caracteristica"
+                                value="Precavido" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Precavido">Precavido</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Barraqueiro"
+                                name="caracteristica" value="Barraqueiro" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Barraqueiro">Barraqueiro</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Sabichão" name="caracteristica"
+                                value="Sabichão" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Sabichão">Sabichão</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Friorento" name="caracteristica"
+                                value="Friorento" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Friorento">Friorento</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Despachado"
+                                name="caracteristica" value="Despachado" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Despachado">Despachado</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Cientista" name="caracteristica"
+                                value="Cientista" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Cientista">Cientista</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Tagarela" name="caracteristica"
+                                value="Tagarela" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Tagarela">Tagarela</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Complicado"
+                                name="caracteristica" value="Complicado" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Complicado">Complicado</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Carinhoso" name="caracteristica"
+                                value="Carinhoso" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Carinhoso">Carinhoso</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Insatisfeito"
+                                name="caracteristica" value="Insatisfeito" autocomplete="off">
+                            <label class="btn btn-outline-primary"
+                                for="caracteristica-Insatisfeito">Insatisfeito</label>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" class="btn-check" id="caracteristica-Sábio" name="caracteristica"
+                                value="Sábio" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="caracteristica-Sábio">Sábio</label>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Votar</button>
+
+                <div class="alert alert-success mt-3 d-none" role="alert" id="mensagem"></div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBpeE0RXooRsjCr75s3pWGmCMMCbKzORhM",
+            authDomain: "votacaofuncionariosnatal.firebaseapp.com",
+            databaseURL: "https://votacaofuncionariosnatal-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "votacaofuncionariosnatal",
+            storageBucket: "votacaofuncionariosnatal.firebasestorage.app",
+            messagingSenderId: "659755654105",
+            appId: "1:659755654105:web:b11b3504613aee8d9397c8"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+
+        document.getElementById('formulario').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const funcionario = document.getElementById('funcionario').value;
+            const caracteristicas = [...document.querySelectorAll('input[name="caracteristica"]:checked')].map(c => c.value);
+
+            if (!funcionario || caracteristicas.length === 0) {
+                alert("Escolha um funcionário e pelo menos uma característica.");
+                return;
+            }
+
+            const novoVoto = {
+                funcionario,
+                caracteristicas,
+                timestamp: Date.now()
+            };
+
+            try {
+                await database.ref('votos').push(novoVoto);
+                document.getElementById('mensagem').classList.remove('d-none');
+                document.getElementById('mensagem').classList.remove('alert-danger');
+                document.getElementById('mensagem').classList.add('alert-success');
+                document.getElementById('mensagem').innerText = "✅ Voto registado com sucesso!";
+                this.reset();
+            } catch (error) {
+                document.getElementById('mensagem').classList.remove('d-none');
+                document.getElementById('mensagem').classList.remove('alert-success');
+                document.getElementById('mensagem').classList.add('alert-danger');
+                document.getElementById('mensagem').innerText = "❌ Erro ao registar voto...";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
